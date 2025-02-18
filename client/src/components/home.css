@@ -1,0 +1,394 @@
+/* General container styling */
+.home-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title and headings */
+  .home-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tasks-heading {
+    font-size: 22px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .logout-button {
+    background-color: #d9534f;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c;
+  }
+  
+  .create-task-button {
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .create-task-button:hover {
+    background-color: #025aa5;
+  }
+  
+  /* Task List */
+  .tasks-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: white;
+    border-left: 5px solid #0275d8;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .task-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .task-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .task-status,
+  .task-date {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  .status-text {
+    color: #0275d8;
+  }
+  
+  .date-text {
+    color: #d9534f;
+  }
+  
+  /* Delete button */
+  .delete-button {
+    background-color: #d9534f;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Create Task Form */
+  .create-task-form {
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-task-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    background-color: #5cb85c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .submit-button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .cancel-button {
+    background-color: #f0ad4e;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .cancel-button:hover {
+    background-color: #ec971f;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* No Tasks */
+  .no-tasks {
+    color: #777;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  /* Container for the Edit Task Form */
+.edit-task-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .edit-task-form h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Elements */
+  .edit-task-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input Fields */
+  .edit-task-form input,
+  .edit-task-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .edit-task-form input:focus,
+  .edit-task-form select:focus {
+    outline: none;
+    border-color: #4b9cd3;
+  }
+  
+  /* Submit Button */
+  .edit-task-form button[type="submit"] {
+    padding: 12px;
+    background-color: #4b9cd3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .edit-task-form button[type="submit"]:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Cancel Button */
+  .edit-task-form button[type="button"] {
+    padding: 10px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-task-form button[type="button"]:hover {
+    background-color: #e3404e;
+  }
+
+  /* Centering the form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .form-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Title Styling */
+  .form-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Form Styling */
+  .task-form {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Labels */
+  .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  /* Input Fields */
+  .form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Button Styles */
+  .form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Cancel Button */
+  .cancel-button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d6d6d6;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .edit-task-form {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .edit-task-form h3 {
+      font-size: 20px;
+    }
+  
+    .edit-task-form input,
+    .edit-task-form select {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .edit-task-form button[type="submit"],
+    .edit-task-form button[type="button"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .home-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .task-item {
+      padding: 10px;
+    }
+  
+    .input-field {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
